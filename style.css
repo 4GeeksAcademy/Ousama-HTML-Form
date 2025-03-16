@@ -1,0 +1,94 @@
+.contenedor {
+    margin: 120px;
+    border: solid 2px rgba(196, 196, 196, 0.281);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    border-bottom: solid 1px rgb(196, 196, 196, 0.281);
+    border-radius: 1px 1px 0px 0px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.amount {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton {
+    border-top: solid 1px rgb(196, 196, 196, 0.281);
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.pagos {
+    display: flex;
+    gap: 15px; 
+}
+
+.pagos label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.pagos input {
+    margin-right: 2px;
+}
+
+.pagos i {
+    font-size: 14px;
+}
+
+
+.input-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .input-icon input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
