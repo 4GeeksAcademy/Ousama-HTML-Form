@@ -5,59 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Input</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   <div class="contenedor">
+   <div class="contenedor container">
         <div class="titulo p-2">
             <strong>Payment for example</strong>
         </div>
         <div class="aviso m-3">
-            <div class="aviso alert alert-danger" role="alert"> Some fields are missing</div>
+            <div class="alert alert-danger" role="alert"> Some fields are missing</div>
         </div>
 
-            <div class="tarjeta">
-                <div class="row m-2">
-                        <div class="col-4">
-                            <label for="card">Card #</label><br>
-                            <input type="text" pattern="[0-9]" name="Card" value="" size="16" placeholder="XXXXXXXXXXXXXXXX" minlength="16" maxlength="16" />
-                        </div>
-                        <div class="col-4">
-                            <label for="cvc">CVC #</label><br>
-                            <input type="text" pattern="[0-9]" name="cvc" placeholder="XXX" minlength="3" maxlength="3"/>
-                        </div>
-                        <div class="col-4">
-                            <label for="amount">Amount</label>
-                                <div class="input-icon">
-                                    <i class="fa-regular fa-dollar-sign"></i>
-                                    <input type="text" pattern="[0-9]" name="amount" placeholder="Amount" />
-                                </div>
-                        </div>
+        <div class="tarjeta">
+            <div class="row m-2">
+                <div class="col-md-4 col-12">
+                    <label for="card">Card #</label>
+                    <input type="text" pattern="[0-9]" name="Card" placeholder="XXXXXXXXXXXXXXXX" minlength="16" maxlength="16" />
+                </div>
+                <div class="col-md-4 col-12">
+                    <label for="cvc">CVC #</label>
+                    <input type="text" pattern="[0-9]" name="cvc" placeholder="XXX" minlength="3" maxlength="3"/>
+                </div>
+                <div class="col-md-4 col-12">
+                    <label for="amount">Amount</label>
+                    <div class="input-icon">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        <input type="text" pattern="[0-9]" name="amount" placeholder="Amount" />
+                    </div>
                 </div>
             </div>
+        </div>
 
         <div class="info1">
-                <div class="row m-2">
-                    <div class="col-6">
-                        <label for="name">First Name</label><br>
-                        <input type="text" name="name"/>
-                    </div>
-                    <div class="col-6">
-                        <label for="last">Last Name</label><br>
-                        <input type="text" name="last"/>
-                    </div>
+            <div class="row m-2">
+                <div class="col-md-6 col-12">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name"/>
                 </div>
+                <div class="col-md-6 col-12">
+                    <label for="last">Last Name</label>
+                    <input type="text" name="last"/>
+                </div>
+            </div>
         </div>
 
         <div class="info2">
             <div class="row m-2">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <label for="city">City</label>
                     <input type="text" name="city"/>
                 </div>
-                <div class="col-3">
-                    <label for="satate">State</label>
+                <div class="col-md-3 col-12">
+                    <label for="state">State</label>
                     <select class="select">
                         <option>Pick a state</option>
                         <option>2</option>
@@ -65,16 +65,16 @@
                         <option>4</option>
                         <option>5</option>
                         <option>6</option>
-                      </select>
+                    </select>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-12">
                     <label for="zip">Postal Code</label>
                     <input type="text" name="zip"/>
                 </div>
             </div>
-            
+
             <div class="row m-2">
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p>We accept:</p>
                     <div class="pagos bg-secondary p-2 rounded d-flex justify-content-around align-items-center">
                         <label class="d-flex align-items-center text-white">
@@ -95,21 +95,21 @@
                         </label> 
                     </div>
                 </div>
-                <div class="col"></div>
-                <div class="col-6">
+                <div class="col-md-2"></div>
+                <div class="col-md-6 col-12">
                     <label for="Message">Message</label>
                     <textarea name="Message" cols="30" rows="4"></textarea>
                     <small class="text-muted">Add any notes here.</small>
                 </div>
             </div>
         </div>
-         
+
         <div class="boton">
             <button type="button" class="btn btn-secondary">Cancel</button>
             <button type="button" class="btn btn-primary">Send</button>
         </div>
    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
